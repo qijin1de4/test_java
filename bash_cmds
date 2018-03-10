@@ -1,0 +1,8 @@
+
+# reverse grep
+# grep : -v invert match. -E use regular expression
+# select files under current dir which is not .java file
+ls | grep -v -E *\.java
+# remove those not java source files
+rm $(ls | grep -v -E *\.java)
+
